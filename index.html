@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Blast Tool</title>
+</head>
+<body>
+    <h1>WhatsApp Blast Tool</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label>Upload CSV (with 'number' column):</label><br/>
+        <input type="file" name="contacts" required><br/><br/>
+        <label>Write your message (text + emojis allowed):</label><br/>
+        <textarea name="message" rows="6" cols="50" required></textarea><br/><br/>
+        <button type="submit">Send Blast</button>
+    </form>
+</body>
+</html>
